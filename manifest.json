@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "IP Collector",
+    "version": "1.0",
+    "description": "Collects IPs from requests matching specific hostnames",
+    "permissions": [
+        "webRequest",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
